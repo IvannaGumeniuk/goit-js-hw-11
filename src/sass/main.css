@@ -36,10 +36,10 @@ img {
     justify-content: center;
     align-items: center;
     background:
-            radial-gradient(#000 15%, transparent 16%) 0 0,
-            radial-gradient(#000 15%, transparent 16%) 8px 8px,
-            radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
-            radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+        radial-gradient(#000 15%, transparent 16%) 0 0,
+        radial-gradient(#000 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
     background-color: #282828;
     background-size: 16px 16px;
     height: 70px;
@@ -112,12 +112,10 @@ img {
     align-items: center;
 }
 
-.load-more.is-visible {
-    display: inline-block;
-}
+
 
 .load-more {
-    display: none; 
+    /* display: none; */
     position: absolute;
     margin: 20px 50%;
     margin-right: -50%;
@@ -128,14 +126,22 @@ img {
     width: 200px;
     border-radius: 3px;
     border: none;
-    font-size: 18px;  
+    font-size: 18px;
 }
 
-b{
+.load-more.is-visible {
+    display: inline-block;
+}
+
+.load-more__js {
+    display: none;
+}
+
+b {
     position: relative;
 }
 
-.info-value{
+.info-value {
     color: #696969;
     text-align: center;
     font-weight: normal;
@@ -146,6 +152,7 @@ b{
     transform: translate(-50%, -50%)
 }
 
-.load-more__js {
-    display: none;
+a {
+    /* text-decoration: none; */
+    color: #282828;
 }
