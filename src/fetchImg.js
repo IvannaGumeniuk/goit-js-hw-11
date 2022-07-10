@@ -1,5 +1,6 @@
 const DEFAULT_PAGE = 1;
 let page = DEFAULT_PAGE;
+let totalHitsImage = '';
 
 export const resetPage = () => {
     page = DEFAULT_PAGE;
@@ -28,8 +29,11 @@ export const fetchImg = (imgKey) => {
             page += 1;
             return {
                 imgs: data.hits,
-                isLastPage: page === data.totalHits,
+                // isLastPage: page === data.totalHits,
             };
         });
+    
 };
 
+
+  
