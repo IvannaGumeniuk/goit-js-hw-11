@@ -65,4 +65,3 @@ function createSimpleLightbox() {
   const gallery = new SimpleLightbox('.gallery a');
   gallery.refresh();
 }
-

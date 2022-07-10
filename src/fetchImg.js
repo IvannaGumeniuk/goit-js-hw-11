@@ -29,11 +29,7 @@ export const fetchImg = (imgKey) => {
             page += 1;
             return {
                 imgs: data.hits,
-                // isLastPage: page === data.totalHits,
             };
         });
     
 };
-
-
-  
