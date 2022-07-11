@@ -25,9 +25,9 @@ form.addEventListener('submit', event => {
     } else {
       
    resetPage();
-   fetchImg(imgKey).then(({imgs}) => {
+      fetchImg(imgKey).then(({ imgs }) => {
      imgContainer.innerHTML = createImgCards(imgs);
-      createSimpleLightbox();
+     createSimpleLightbox();
      loadMoreBtn.classList.remove('load-more__js');
 
      if (imgs.length === 0) {
@@ -40,11 +40,6 @@ form.addEventListener('submit', event => {
           loadMoreBtn.classList.add('load-more__js');
           
         }
-// else {
-//           getPixabayApi.showTotalHits();
-//           renderPixabaiApi(hits);
-//           loadMoreBtn.classList.remove('load-more__js');
-//         }
       })
       .finally(); 
     }});
@@ -65,3 +60,4 @@ function createSimpleLightbox() {
   const gallery = new SimpleLightbox('.gallery a');
   gallery.refresh();
 }
+
